@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/emirata/IdeaProjects/Ariel</OriginalElement>
+  <nodes>
+    <node x="0.0" y="872.0">sample.moneyBoxInfosController</node>
+    <node x="1136.0" y="1238.0">sample.Main</node>
+    <node x="0.0" y="0.0">sample.MainScreenController</node>
+    <node x="1316.0" y="872.0">sample.depositControl</node>
+    <node x="325.0" y="547.0">sample.Checking</node>
+    <node x="1148.0" y="0.0">sample.transferControl</node>
+    <node x="320.0" y="1238.0">sample.Transactions</node>
+    <node x="546.0" y="569.5">sample.Saving</node>
+    <node x="555.0" y="1238.0">sample.transactionControl</node>
+    <node x="320.0" y="872.0">sample.accountInfosController</node>
+    <node x="875.0" y="1238.0">sample.DatabaseConnection</node>
+    <node x="810.0" y="0.0">sample.RegisterController</node>
+    <node x="960.0" y="872.0">sample.LoginController</node>
+    <node x="0.0" y="1238.0">sample.withdrawControl</node>
+    <node x="640.0" y="872.0">sample.CreditCardInfosController</node>
+    <node x="399.0" y="0.0">sample.Account</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="sample.Checking" target="sample.Account" relationship="GENERALIZATION">
+      <point x="0.0" y="-105.5" />
+      <point x="425.5" y="522.0" />
+      <point x="540.5" y="522.0" />
+      <point x="0.0" y="248.5" />
+    </edge>
+    <edge source="sample.Saving" target="sample.Account" relationship="GENERALIZATION">
+      <point x="0.0" y="-83.0" />
+      <point x="655.5" y="522.0" />
+      <point x="540.5" y="522.0" />
+      <point x="0.0" y="248.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="291.0" y="280.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

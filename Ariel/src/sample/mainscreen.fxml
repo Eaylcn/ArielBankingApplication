@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="662.0" prefWidth="1056.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainScreenController">
+   <children>
+      <ImageView fx:id="background" onMouseMoved="#setInfoLabel">
+         <image>
+            <Image url="@../../images/mainbg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="moneyBoxButton" fitHeight="84.0" fitWidth="266.0" layoutX="31.0" layoutY="331.0" onMouseClicked="#moneyBoxButton" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../images/moneyboxbutton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="transferButton" fitHeight="84.0" fitWidth="266.0" layoutX="31.0" layoutY="440.0" onMouseClicked="#transfer" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/transferbutton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="withdrawButton" fitHeight="84.0" fitWidth="266.0" layoutX="31.0" layoutY="550.0" onMouseClicked="#withdraw" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/withdrawbutton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="creditCardButton" fitHeight="84.0" fitWidth="266.0" layoutX="764.0" layoutY="331.0" onMouseClicked="#creditCardButton" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../images/creditcardbutton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="depositButton" fitHeight="84.0" fitWidth="266.0" layoutX="764.0" layoutY="440.0" onMouseClicked="#deposit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/depositbutton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="accInfoButton" fitHeight="84.0" fitWidth="266.0" layoutX="764.0" layoutY="550.0" onMouseClicked="#showInfo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/accinfobutton.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="closeButton" fitHeight="48.0" fitWidth="48.0" layoutX="21.0" layoutY="22.0" onMouseClicked="#closeThisGoLogin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/closebutton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="userImage" fitHeight="180.0" fitWidth="180.0" layoutX="438.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/userpp.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel" alignment="TOP_CENTER" layoutX="297.0" layoutY="273.0" lineSpacing="10.0" prefHeight="59.0" prefWidth="467.0" text="Welcome,  Emir Ata Yalçın" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="AppleGothic Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoLabel" alignment="TOP_CENTER" layoutX="297.0" layoutY="318.0" lineSpacing="10.0" prefHeight="220.0" prefWidth="467.0" text="Account Informations" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="AppleGothic Regular" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="transactionButton" fitHeight="84.0" fitWidth="90.0" layoutX="489.0" layoutY="550.0" onMouseClicked="#transactionHistory" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/transactions.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

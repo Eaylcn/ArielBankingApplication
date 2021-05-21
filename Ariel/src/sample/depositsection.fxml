@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="367.0" prefWidth="470.0" style="-fx-background-color: #00204a;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.depositControl">
+   <children>
+      <AnchorPane opacity="0.5" prefHeight="94.0" prefWidth="470.0" style="-fx-background-color: #005792;" />
+      <Label fx:id="warnLabel" alignment="CENTER" layoutX="36.0" layoutY="94.0" prefHeight="65.0" prefWidth="399.0" text="Please enter the amount you want to deposit." textFill="AQUA" wrapText="true">
+         <font>
+            <Font name="AppleGothic Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="96.0" layoutY="236.0" prefHeight="30.0" prefWidth="112.0" text="Amount :" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="AppleGothic Regular" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="amountTxt" layoutX="217.0" layoutY="239.0" />
+      <Label alignment="TOP_CENTER" layoutX="125.0" layoutY="14.0" prefHeight="65.0" prefWidth="222.0" text="Deposit" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="AppleGothic Regular" size="44.0" />
+         </font>
+      </Label>
+      <Button fx:id="depositButton" layoutX="156.0" layoutY="291.0" mnemonicParsing="false" onMouseClicked="#depositButtonClick" prefHeight="37.0" prefWidth="160.0" style="-fx-background-color: #005792;" text="Deposit" textFill="WHITE">
+         <font>
+            <Font name="AppleGothic Regular" size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="infoLabel" layoutX="59.0" layoutY="155.0" prefHeight="73.0" prefWidth="354.0" text="100000 $ has been withdrawn from your account number 190433302. remaining balance in your account: $ 10000." textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#closeThisGoMain" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/closebutton2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

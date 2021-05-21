@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="356.0" prefWidth="443.0" style="-fx-background-color: #00204a;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreditCardInfosController">
+   <children>
+      <BorderPane opacity="0.5" prefHeight="356.0" prefWidth="443.0" style="-fx-background-color: #005792;" />
+      <Label alignment="CENTER" layoutX="82.0" layoutY="10.0" prefHeight="42.0" prefWidth="279.0" text="Credit Card Information" textFill="WHITE">
+         <font>
+            <Font name="AppleGothic Regular" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ccImage" fitHeight="200.0" fitWidth="400.0" layoutX="57.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/creditcard.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="changePINButton" layoutX="57.0" layoutY="295.0" mnemonicParsing="false" onMouseClicked="#changePIN" prefHeight="34.0" prefWidth="95.0" style="-fx-background-color: #00204a;" text="Change PIN" textFill="WHITE">
+         <font>
+            <Font name="AppleGothic Regular" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="ccNumLabel" alignment="CENTER" layoutX="69.0" layoutY="198.0" prefHeight="42.0" prefWidth="306.0" text="1610 1907 0000 1234" textFill="WHITE">
+         <font>
+            <Font name="AppleGothic Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="ccNameLabel" alignment="TOP_LEFT" layoutX="82.0" layoutY="240.0" prefHeight="34.0" prefWidth="253.0" text="Emir Ata Yalçın" textFill="WHITE">
+         <font>
+            <Font name="AppleGothic Regular" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="closeButton" fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#closeThisGoMain" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/backbtn.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="pinTxt" layoutX="304.0" layoutY="299.0" prefHeight="26.0" prefWidth="83.0" />
+      <Label fx:id="infoLabel" alignment="CENTER" layoutX="96.0" layoutY="46.0" prefHeight="26.0" prefWidth="253.0" textFill="WHITE">
+         <font>
+            <Font name="AppleGothic Regular" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
